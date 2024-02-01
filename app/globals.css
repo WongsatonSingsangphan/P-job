@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root {
+  --headertext: #1F2939;;
+  --text: #778296;;
+  --bg: #151c2c;
+  --bgSoft: #182237;
+  --textSoft: #b7bac1;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+  color: var(--headertext);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--headertext);
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--headertext);
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--headertext);
+}
+
+h5 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--headertext);
+}
+
+/* ตั้งค่าเริ่มต้นของ paragraf */
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+/* body {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+} */
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clockloader {
+  --clock-width: 20px; /* Adjust the clock size as needed */
+  --clock-radius: calc(var(--clock-width) / 2);
+  --clock-minute-length: calc(var(--clock-width) * 0.4);
+  --clock-hour-length: calc(var(--clock-width) * 0.2);
+  --clock-thickness: 0.2rem;
+
+  position: relative;
+  width: var(--clock-width);
+  height: var(--clock-width);
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--clock-radius) * 0.25);
+    width: var(--clock-thickness);
+    background: #ffffff;
+    border-radius: 10px;
+    transform-origin: center calc(100% - calc(var(--clock-thickness) / 2));
+    animation: spin infinite linear;
+  }
+
+  &::before {
+    height: var(--clock-minute-length);
+    animation-duration: 2s;
+  }
+
+  &::after {
+    top: calc(var(--clock-radius) * 0.25 + var(--clock-hour-length));
+    height: var(--clock-hour-length);
+    animation-duration: 15s;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.forgot{
+  animation: 1s ease 0s 1 normal none running shrink;
+  -webkit-animation: 1s ease 0s 1 normal none running shrink;
+}
+
+@keyframes shrink {
+0% {
+  min-height: 80vh;
+}
+
+100% {
+  min-height: 45vh;
+}
+}
+
+#headtable{
+  background-color: #F7F8F9;
+  border-bottom: 1px solid #C2CCE1;
+  border-top: 1px solid #C2CCE1;
+}
+#tablelist{
+  border: 1px solid #C2CCE1;
+  border-radius: 12px;
+}
+#cellheader{
+  color: #778296;
+}
+

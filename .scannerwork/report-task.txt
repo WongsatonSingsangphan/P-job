@@ -1,0 +1,6 @@
+projectKey=P-job
+serverUrl=http://localhost:9099
+serverVersion=10.3.0.82913
+dashboardUrl=http://localhost:9099/dashboard?id=P-job
+ceTaskId=AY1eUvs28V5fUNLj0Lh7
+ceTaskUrl=http://localhost:9099/api/ce/task?id=AY1eUvs28V5fUNLj0Lh7

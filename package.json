@@ -1,0 +1,41 @@
+{
+  "name": "chic-crm-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build-ubuntu": "next build -o ./chiccrm"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@material-ui/core": "^4.12.4",
+    "@mui/icons-material": "^5.14.19",
+    "@mui/material": "^5.15.3",
+    "@vercel/speed-insights": "^1.0.4",
+    "context": "^3.0.19",
+    "i": "^0.3.7",
+    "next": "^14.0.4",
+    "qrcode.react": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-multi-email": "^1.0.19",
+    "react-otp-input": "^3.1.1",
+    "react-toastify": "^9.1.3",
+    "react-verification-code-input": "^1.2.9",
+    "typeface-montserrat": "^1.1.13",
+    "typeface-prompt": "^1.1.13",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6"
+  }
+}

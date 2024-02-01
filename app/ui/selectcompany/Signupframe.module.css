@@ -1,0 +1,27 @@
+/* start signupframe */
+.full-page {
+    background: linear-gradient(107.56deg, #84BAA1 0%, #FFFBE2 100%), linear-gradient(0deg, #F7FAFB, #F7FAFB);
+    height: 100vh;
+  }
+  
+  .sub-page {
+    background-color: #FFF;
+    height: 100vh;
+    width: 80%;
+    padding: 60px;
+  }
+  
+  @media (max-width: 768px) {
+    .sub-page {
+      width: 100%;
+      padding: 20px;
+      margin-right: 0px !important;
+    }
+  }
+  
+  .sub-page h2 {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* end signupframe */
