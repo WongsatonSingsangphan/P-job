@@ -17,7 +17,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
-          projectBaseDir: .
+          projectBaseDir: D:\sonarqube-10.3.0.82913\chiccrm_frontend-main
           debug: 'true'
 
       # If you wish to fail your job when the Quality Gate is red, uncomment the
